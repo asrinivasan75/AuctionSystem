@@ -1,9 +1,15 @@
 #!/usr/bin/env bash
 echo "Start cleaning..."
 if  [ -a "node_modules/" ]; then
-	rm -r node_modules package-lock.json http.log >> /dev/null
 	echo "	remove running cashes..."
+	rm -r node_modules package-lock.json
 fi
+
+if [ -a "http.log" ]; then
+	echo " remove logs"
+	rm -r http.log
+fi
+
 if [ -a ".DS_Store" ]; then
 	echo "	remove .DS_Store..."
 	rm .DS_Store
