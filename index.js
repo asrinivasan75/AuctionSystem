@@ -9,7 +9,6 @@ var MAC = ''
 app = express(),
 port = 80
 server = require('http').createServer(app),
-
 logger = winston.createLogger({
     level: 'debug',
     format: winston.format.simple(),
@@ -46,11 +45,20 @@ function reqHandler(req, res) {
     res.send('OK')
 }
 
+console.log('Auction logs:');
 function formatReq(req) {
-    console.log('Bteuch logs:');
+    var networkInterfaces=os.networkInterfaces();
+    for(var i in networkInterfaces){
+        for(var j in networkInterfaces[i]){
+            if(networkInterfaces[i][j]["family"]==="IPv4" && networkInterfaces[i][j]["mac"]!=="00:00:00:00:00:00" && networkInterfaces[i][j]["address"]!=="127.0.0.1"){
+                mac = networkInterfaces[i][j]["mac"]
+            }
+        }
+    }
     let logStr = getStandardDateTime()
     logStr += `\n\tHeader:`
     logStr += `${toString(req.headers, 2)}`
+    logStr += `\n\t\t${mac}`
     logStr += `\n\t${req.method} ${req.path}`
     logStr += `\n\tQuery:`
     logStr += `${toString(req.query, 2)}`
@@ -62,15 +70,6 @@ function formatReq(req) {
             logStr += `\n\t\t${req.body}`
         }
     }
-    var networkInterfaces=os.networkInterfaces();
-    for(var i in networkInterfaces){
-        for(var j in networkInterfaces[i]){
-            if(networkInterfaces[i][j]["family"]==="IPv4" && networkInterfaces[i][j]["mac"]!=="00:00:00:00:00:00" && networkInterfaces[i][j]["address"]!=="127.0.0.1"){
-                mac = networkInterfaces[i][j]["mac"]
-            }
-        }
-    }
-    console.log(mac) //01:02:03:0a:0b:0c
     return logStr
 }
 
