@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+echo "Start cleaning..."
+if  [ -a "node_modules/" ]; then
+	rm -r node_modules package-lock.json http.log >> /dev/null
+	echo "	remove running cashes..."
+fi
+if [ -a ".DS_Store" ]; then
+	echo "	remove .DS_Store..."
+	rm .DS_Store
+fi
+
+echo "Cleaning finish, have a nice day!"
