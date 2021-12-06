@@ -1,0 +1,19 @@
+{
+  "name": "auctionsystem",
+  "version": "1.0.0",
+  "description": "An Auction System for school",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asrinivasan75/AuctionSystem.git"
+  },
+  "author": "Aadithya, Tiger & Jesse",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/asrinivasan75/AuctionSystem/issues"
+  },
+  "homepage": "https://github.com/asrinivasan75/AuctionSystem#readme"
+}
