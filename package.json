@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/asrinivasan75/AuctionSystem/issues"
   },
-  "homepage": "https://github.com/asrinivasan75/AuctionSystem#readme"
+  "homepage": "https://github.com/asrinivasan75/AuctionSystem#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
