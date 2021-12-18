@@ -1,0 +1,79 @@
+.top {
+  width: auto;
+  height: 55px;
+  background-color: #d1ddd8;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+}
+.side {
+  width: 31.7px;
+  height: 22px;
+  position: fixed;
+  top: 17px;
+  left: 1.6%;
+}
+.Category {
+  width: 301px;
+  height: auto;
+  box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.5);
+  background-color: rgba(229, 238, 234, 0.89);
+  position: fixed;
+  top: 10.6%;
+  bottom: 6.3%;
+  left: 1.6%;
+}
+.Second-Hand-System {
+  width: 193px;
+  height: 22px;
+  position: fixed;
+  top: 17px;
+  left: 5.3%;
+  font-family: MicrosoftSansSerif;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: justify;
+  color: #283b42;
+}
+.info_p {
+  width: 954px;
+  height: 316px;
+  left: 27.3%;
+  right: 6.5%;
+  background-color: #d8d8d8;
+  object-fit: cover;
+  position: absolute;
+  top: 12.9%;
+  right: 6.5%;
+}
+.sign {
+  width: 140px;
+  height: 36px;
+  border-radius: 17px;
+  box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.5);
+  background-color: #283b42;
+  position: fixed;
+  top: 9px;
+  right: 1.6%;
+}
+.Sign-Up-Login {
+  width: 97px;
+  height: 18px;
+  font-family: MicrosoftSansSerif;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: justify;
+  color: #fff;
+  position: fixed;
+  top: 18px;
+  right: 3.1%;
+}
