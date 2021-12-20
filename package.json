@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/asrinivasan75/AuctionSystem#readme",
   "dependencies": {
+    "blur-image": "^0.1.2",
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "moment": "^2.29.1",
